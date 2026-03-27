@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Treasures — Elegant Hair Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .luxury-hero {
+            position: relative;
+            width: 100%;
+            min-height: 85vh;         /* comfortable vertical space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* MAIN HERO BACKGROUND IMAGE (provided) */
+            background-image: url('images/hero.png');
+            background-size: cover;
+            background-position: center 30%;  /* slightly adjust vertical focus */
+            background-repeat: no-repeat;
+            /* Warm, subtle overlay to maintain readability & elegance */
+            background-color: rgba(26, 22, 20, 0.15);
+            background-blend-mode: overlay;
+            overflow: hidden;
+        }
+
+        /* Extra layer: soft gradient overlay to unify text contrast 
+           without hiding the beautiful marble texture */
+        .luxury-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(250,248,245,0.25) 0%, rgba(26,22,20,0.1) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Remove previous decorative circles that could compete with hero image */
+        .luxury-hero::after {
+            display: none;
+        }
+
+        /* Hero content stays above overlay */
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 780px;
+            background: rgba(250, 248, 245, 0.82);   /* light ivory veil */
+            backdrop-filter: blur(3px);
+            padding: 40px 48px;
+            border-radius: 32px;
+            border: 1px solid rgba(200, 149, 108, 0.4);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, backdrop-filter 0.4s;
+            animation: softFadeUp 0.8s ease-out;
+        }
+
+        /* Optional hover effect that gives subtle life */
+        .hero-content:hover {
+            backdrop-filter: blur(4px);
+            background: rgba(250, 248, 245, 0.9);
+        }
+
+        /* adjust hero tag & text for better legibility */
+        .hero-tag {
+            background: rgba(26, 22, 20, 0.65);
+            backdrop-filter: blur(2px);
+            color: var(--gold-light);
+            border: 1px solid var(--gold-light);
+            font-weight: 500;
+        }
+
+        .luxury-hero h2 {
+            color: #1a1614;
+            text-shadow: 0 1px 2px rgba(255,255,240,0.3);
+        }
+
+        .hero-text {
+            color: #2c2521;
+            font-weight: 400;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 28px 24px;
+                margin: 0 20px;
+                max-width: 90%;
+            }
+            .luxury-hero {
+                min-height: 75vh;
+                background-position: center 25%;
+            }
+            .luxury-hero h2 {
+                font-size: 44px;
+            }
+            .hero-text {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content {
+                padding: 24px 18px;
+            }
+            .luxury-hero h2 {
+                font-size: 34px;
+            }
+        }
+
+        /* Animation for smooth entry (already defined in style.css but keep consistency) */
+        @keyframes softFadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ensure footer and bottom nav behave correctly */
+        .mobile-bottom-nav {
+            display: flex;
+        }
+        @media (min-width: 769px) {
+            .mobile-bottom-nav {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <header class="top-navbar">
+    <div class="logo-container">
+      <img src="images/logo/logo.png" alt="Funky Treasures Logo">
+      <h1>Funky Treasures</h1>
+    </div>
+
+    <nav class="main-nav">
+      <a href="pages/casual-clips.html">Casual Clips</a>
+      <a href="pages/trendy-clips.html">Trendy Clips</a>
+      <a href="pages/scrunchies.html">Scrunchies</a>
+      <a href="pages/kids-zone.html">Kids Zone</a>
+      <a href="pages/bouquet.html">Bouquet</a>
+      <a href="pages/hampers.html">Hamper</a>
+    </nav>
+
+    <div class="nav-icons">
+      <a href="#" id="openSearch" title="Search" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M20 20l-3.5-3.5"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="luxury-hero">
+    <div class="hero-content">
+      <p class="hero-tag">Funky Treasures</p>
+      <h2>
+        Elevate Your Style<br>
+        <em>with Elegant Accessories</em>
+      </h2>
+      <p class="hero-text">
+        At Funky Treasures, we create cute and elegant accessories that add charm to your everyday style. From scrunchies and clips to hampers and bouquets, every collection is chosen with care to make your moments feel a little more special. 💖
+      </p>
+      <a href="categories.html" class="btn"><span>Shop Collection</span></a>
+    </div>
+  </section>
+
+  <!-- SHOP BY CATEGORY -->
+  <section id="shop-category-section" class="shop-category-section">
+    <p class="category-title">Shop by Category</p>
+    <h2 class="category-subtitle">Browse Our Curated Collections</h2>
+
+    <div class="shop-category-grid">
+      <a href="pages/casual-clips.html" class="shop-category-item">
+        <img src="images/categories/casual-clips.jpg" alt="Casual Clips">
+        <h3>Casual Clips</h3>
+      </a>
+      <a href="pages/trendy-clips.html" class="shop-category-item">
+        <img src="images/categories/trendy-clips.jpg" alt="Trendy Clips">
+        <h3>Trendy Clips</h3>
+      </a>
+      <a href="pages/scrunchies.html" class="shop-category-item">
+        <img src="images/categories/scrunchies.jpg" alt="Scrunchies">
+        <h3>Scrunchies</h3>
+      </a>
+      <a href="pages/kids-zone.html" class="shop-category-item">
+        <img src="images/categories/kids-zone.jpg" alt="Kids Zone">
+        <h3>Kids Zone</h3>
+      </a>
+      <a href="pages/bouquet.html" class="shop-category-item">
+        <img src="images/categories/bouquet.jpg" alt="Bouquet">
+        <h3>Bouquet</h3>
+      </a>
+      <a href="pages/hampers.html" class="shop-category-item">
+        <img src="images/categories/hampers.jpg" alt="Hamper Boxes">
+        <h3>Hamper</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- SEARCH MODAL -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-box">
+      <div class="search-top">
+        <input type="text" id="searchInput" placeholder="Search products, categories…">
+        <button id="closeSearch" class="close-search">×</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <p class="search-placeholder">Start typing to search products…</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="mobile-bottom-nav">
+    <a href="index.html" class="mobile-nav-item active">
+      <span class="mobile-nav-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 3l9 7.5v10a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5h-6v5a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 3 20.5v-10L12 3z"/>
+        </svg>
+      </span>
+      <span>Home</span>
+    </a>
+    <a href="categories.html" class="mobile-nav-item">
+      <span class="mobile-nav-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 5h16v2H4V5zm0 6h16v2H4v-2zm0 6h16v2H4v-2z"/>
+        </svg>
+      </span>
+      <span>Category</span>
+    </a>
+    <a href="feedback.html" class="mobile-nav-item">
+      <span class="mobile-nav-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 6h-2v9H7v2c0 .55.45 1 1 1h9l4 4V7c0-.55-.45-1-1-1zM17 2H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1z"/>
+        </svg>
+      </span>
+      <span>Feedback</span>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://wa.me/919363620112?text=Hi%20I%20want%20to%20contact%20Funky%20Treasures" target="_blank">Contact Us</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 Funky Treasures. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

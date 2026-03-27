@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback | Funky Treasures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-navbar">
+        <div class="logo-container">
+            <img src="images/logo/logo.png" alt="Funky Treasures Logo">
+            <h1>Funky Treasures</h1>
+        </div>
+
+        <!-- <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="feedback.html">Feedback</a>    
+        </nav> -->
+
+        <div class="nav-icons">
+            <a href="index.html" title="Home" aria-label="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+                    <path d="M5 9.5V20h14V9.5"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+   <section class="feedback-page">
+    <div class="feedback-container">
+
+        <div class="feedback-heading">
+            <h2>Customer Feedback</h2>
+            <p>Share your experience with Funky Treasures 💖</p>
+        </div>
+
+        <div class="feedback-form">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSelMtr-lf3U7pIQz8ddGHvuB_yTZzsDKmVr2dBmi7t9zdvAwg/viewform?usp=header" target="_blank" class="feedback-submit-btn">Submit Feedback</a>
+        </div>
+
+        <div class="feedback-list-section">
+            <h3>What Customers Say</h3>
+            <div id="feedbackList" class="feedback-list"></div>
+        </div>
+
+    </div>
+</section>
+
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 3l9 7.5v10a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5h-6v5a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 3 20.5v-10L12 3z"/>
+                </svg>
+            </span>
+            <span>Home</span>
+        </a>
+
+        <a href="categories.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 5h16v2H4V5zm0 6h16v2H4v-2zm0 6h16v2H4v-2z"/>
+                </svg>
+            </span>
+            <span>Category</span>
+        </a>
+
+        <!-- <a href="#" class="mobile-nav-item">
+            <span class="mobile-nav-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 8h-3.17L15 5H9L7.17 8H4a1 1 0 0 0-1 1v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a1 1 0 0 0-1-1zm-8 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm-4.83-9 1.2-2h7.26l1.2 2H7.17z"/>
+                </svg>
+            </span>
+            <span>Track</span>
+        </a> -->
+
+        <a href="feedback.html" class="mobile-nav-item active">
+            <span class="mobile-nav-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 5h16v10H7l-3 3V5z"/>
+                </svg>
+            </span>
+            <span>Feedback</span>
+        </a>
+<!-- 
+        <a href="#" class="mobile-nav-item">
+            <span class="mobile-nav-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14h9.45c.75 0 1.41-.41 1.75-1.03L21 8H7.21l-.94-2H3v2h2l3.6 7.59-1.35 2.44A1 1 0 0 0 8.1 20H20v-2H8.42l.74-1.34z"/>
+                </svg>
+            </span>
+            <span>Cart</span>
+        </a> -->
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

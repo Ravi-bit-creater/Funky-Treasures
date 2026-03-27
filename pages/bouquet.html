@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquet | Funky Treasures</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="top-navbar">
+        <div class="logo-container">
+            <img src="../images/logo/logo.png" alt="Funky Teasures Logo">
+            <h1>Funky Treasures</h1>
+        </div>
+
+        <nav class="main-nav">
+            <a href="casual-clips.html">Casual Clips</a>
+            <a href="trendy-clips.html">Trendy Clips</a>
+            <a href="scrunchies.html">Scrunchies</a>
+            <a href="kids-zone.html">Kids Zone</a>
+            <a href="bouquet.html">Bouquet</a>
+            <a href="hampers.html">Hamper</a>
+        </nav>
+
+
+        <div class="nav-icons">
+            <a href="../index.html" title="Home" aria-label="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+                    <path d="M5 9.5V20h14V9.5"></path>
+                </svg>
+            </a>
+
+            <a href="../index.html" id="openSearch" title="Search" aria-label="Search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="M20 20l-3.5-3.5"></path>
+                </svg>
+            </a>
+
+            <a href="#" title="Profile" aria-label="Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c1.8-3.5 5-5 8-5s6.2 1.5 8 5"></path>
+                </svg>
+            </a>
+
+            <a href="#" title="Cart" aria-label="Cart">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 6h15l-1.2 7H8.2L6.8 8H4"></path>
+                    <circle cx="9" cy="18" r="1.5"></circle>
+                    <circle cx="18" cy="18" r="1.5"></circle>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="category-layout">
+        <aside class="filter-sidebar">
+            <div class="filter-top">
+                <h3>Filters</h3>
+                <a href="#">Clear All</a>
+            </div>
+
+<div class="filter-group">
+    <h4>Category</h4>
+    <label><input type="radio" name="bouquet-category" value="Mini Bouquet"> Mini Bouquet</label>
+    <label><input type="radio" name="bouquet-category" value="Single Floral"> Single Floral</label>
+    <label><input type="radio" name="bouquet-category" value="Floral with Chocolate"> Floral with Chocolate</label>
+</div>
+
+            <div class="filter-group">
+                <h4>Price</h4>
+                <label><input type="checkbox"> Under ₹100</label>
+                <label><input type="checkbox"> ₹100 - ₹200</label>
+                <label><input type="checkbox"> ₹200 - ₹300</label>
+                <label><input type="checkbox"> ₹300+</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Availability</h4>
+                <select>
+                    <option>All</option>
+                    <option>In Stock</option>
+                    <option>Out of Stock</option>
+                </select>
+            </div>
+
+            <!-- <div class="filter-group">
+                <h4>Sort By</h4>
+                <select>
+                    <option>Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div> -->
+        </aside>
+
+        <section class="category-main-content">
+            <div class="category-breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <span>Bouquet</span>
+            </div>
+
+            <div class="category-header">
+                <h2>Bouquet</h2>
+                <p>3 products</p>
+            </div>
+
+           <div class="category-products-grid exact-grid">
+    <!-- Mini Bouquet -->
+    <div class="category-product-card" data-category="Mini Bouquet" data-price="100" data-stock="in">
+        <a href="product.html?item=mini-bouquet"><img src="../images/products/mini-bouquet.jpg" alt="Mini Bouquet"></a>
+        <div class="category-product-info">
+            <a href="product.html?item=mini-bouquet">Mini Bouquet</a>
+            <p>₹100.00</p>
+        </div>
+        <a href="https://wa.me/919363620112?text=Hi%20I%20want%20to%20order%20Mini%20Bouquet" target="_blank" class="category-whatsapp-btn">Enquiry on WhatsApp</a>
+    </div>
+
+    <!-- Single Floral (Out of Stock Example) -->
+    <div class="category-product-card" data-category="Single Floral" data-price="150" data-stock="out">
+        <a href="product.html?item=single-floral"><img src="../images/products/gift-bouquet.jpg" alt="Gift Bouquet"></a>
+        <div class="category-product-info">
+            <a href="product.html?item=single-floral">Single Floral</a>
+            <p>₹150.00</p>
+        </div>
+        <a href="#" class="category-whatsapp-btn disabled-btn">Out of Stock</a>
+    </div>
+
+    <!-- Floral with Chocolate -->
+    <div class="category-product-card" data-category="Floral with Chocolate" data-price="200" data-stock="in">
+        <a href="product.html?item=floral-chocolate"><img src="../images/products/tulip-bouquet.jpg" alt="Tulip Bouquet"></a>
+        <div class="category-product-info">
+            <a href="product.html?item=floral-chocolate">Floral with Chocolate</a>
+            <p>₹200.00</p>
+        </div>
+        <a href="https://wa.me/919363620112?text=Hi%20I%20want%20to%20order%20Floral%20with%20Chocolate" target="_blank" class="category-whatsapp-btn">Enquiry on WhatsApp</a>
+    </div>
+</div>
+        </section>
+    </main>
+<script src="../filter.js"></script>
+
+</body>
+</html>

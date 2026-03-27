@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Funky Treasures</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="top-navbar">
+        <div class="logo-container">
+            <img src="../images/logo/logo.png" alt="Funky Teasures Logo">
+            <h1>Funky Teasures</h1>
+        </div>
+
+        <nav class="main-nav">
+            <a href="hampers.html">Hamper Boxes</a>
+            <a href="scrunchies.html">Scrunchies</a>
+            <a href="trendy-clips.html">Trendy Clips</a>
+            <a href="casual-clips.html">Casual Clips</a>
+            <a href="bouquet.html">Bouquet</a>
+        </nav>
+
+        <div class="nav-icons">
+            <a href="../index.html" title="Home" aria-label="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5"></path>
+                    <path d="M5 9.5V20h14V9.5"></path>
+                </svg>
+            </a>
+
+            <!-- <a href="../index.html" title="Search" aria-label="Search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="M20 20l-3.5-3.5"></path>
+                </svg>
+            </a>
+
+            <a href="#" title="Profile" aria-label="Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c1.8-3.5 5-5 8-5s6.2 1.5 8 5"></path>
+                </svg>
+            </a>
+
+            <a href="#" title="Cart" aria-label="Cart">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 6h15l-1.2 7H8.2L6.8 8H4"></path>
+                    <circle cx="9" cy="18" r="1.5"></circle>
+                    <circle cx="18" cy="18" r="1.5"></circle>
+                </svg>
+            </a> -->
+        </div>
+    </header>
+
+    <main class="dynamic-product-page">
+        <div class="product-breadcrumb" id="productBreadcrumb">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <a href="#" id="productCategoryLink">Category</a>
+            <span>/</span>
+            <span id="productBreadcrumbName">Product</span>
+        </div>
+
+        <div class="dynamic-product-layout">
+            <div class="dynamic-product-image">
+                <img id="productImage" src="" alt="Product Image">
+            </div>
+
+            <div class="dynamic-product-details">
+                <h2 id="productName">Product Name</h2>
+                <p class="dynamic-product-code" id="productCode">SKU</p>
+                <p class="dynamic-product-price" id="productPrice">₹0.00</p>
+                <p class="dynamic-product-stock">In Stock</p>
+                <p class="dynamic-product-desc-short" id="productShortDesc"></p>
+
+                <h4>Available Colors</h4>
+                <div class="dynamic-color-options" id="productColors"></div>
+
+                <h4>Select Size</h4>
+                <div class="dynamic-sizes" id="productSizes"></div>
+
+                <div class="product-action-section">
+                    <div class="quantity-section">
+                        <label>Quantity</label>
+                        <div class="quantity-controls">
+                            <button type="button" id="qtyMinus">−</button>
+                            <input type="text" id="qtyInput" value="1" readonly>
+                            <button type="button" id="qtyPlus">+</button>
+                        </div>
+                    </div>
+
+                    <div class="action-row">
+                        <a href="#" id="whatsappBtn" class="add-cart-btn" target="_blank">Enquiry on WhatsApp</a>
+
+                        <button class="wishlist-btn" type="button" aria-label="Wishlist">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20.5s-7-4.35-9.2-8.3C1.1 9.2 2.2 5.8 5.7 5.1c2-.4 3.9.4 5.1 2 1.2-1.6 3.1-2.4 5.1-2 3.5.7 4.6 4.1 2.9 7.1-2.2 3.95-9.2 8.3-9.2 8.3z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+
+                    <div class="product-info-box">
+                        <h3>Product Details</h3>
+
+                        <div class="info-row">
+                            <span>Material:</span>
+                            <strong id="productMaterial">satin</strong>
+                        </div>
+                    </div>
+
+                    <div class="description-box">
+                        <h3>Description</h3>
+                        <p id="productDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--         <section class="related-products-section">
+            <h3>You Might Also Like</h3>
+            <div class="related-products-grid" id="relatedProducts"></div>
+        </section> -->
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
